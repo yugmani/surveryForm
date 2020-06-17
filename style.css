@@ -1,0 +1,78 @@
+body, html {
+    margin:0;
+    padding:0;
+}
+
+#container {
+    margin:0 auto;
+    padding:0px;
+    background-color:#D3D3D3;
+    /* text-align:center; */
+}
+
+header {
+    text-align:center;
+    background-color:#000;
+    color:#FFF;
+    padding:15px;
+}
+
+#title {
+    text-transform:uppercase;
+}
+
+#survey-form {
+    margin:0 auto;
+    width:40%;
+    height:auto;
+    padding:25px;
+    /* margin-top:20px; */
+    margin-bottom:20px;
+    background-color:#4682B4;
+    color:#FFF;
+    font-size:20px;
+}
+
+#name, #email, #number {
+    width:90%;
+    
+}
+
+input {
+    padding:10px;
+    margin:10px 0px;
+}
+
+
+#dropdown {
+    padding:10px;
+    border-radius:8px;
+}
+select option {
+    padding:10px;
+}
+
+#shopping {
+    margin:15px 0px;
+}
+
+/* input[type="checkbox"] {
+    /* margin:10px;
+    padding:10px 0px;
+} */
+
+#comments {
+    margin:10px 0px;
+    padding:10px;
+}
+
+
+
+#submit {
+    width:200px;
+    border-radius:15px;
+    background-color:#FFFFE0;
+    padding:10px;
+    color:#9400D3
+}
+

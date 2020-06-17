@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> 
+</head>
+<body>
+    <div id="container">
+        <header>
+            <!--User Story #1: I can see a title with ```id="title"``` in ```H1``` sized text.-->
+            <h1 id="title">SURVEY FORM FOR CUSTOMERS</h1>
+            <!--User Story #2: I can see a short explanation with ```id="description"``` in ```P``` sized text.-->
+            <h2 id="description">Please fill out the form and submit.</h2>
+        </header>
+            <!--User Story #3: I can see a form with ```id="survey-form"```.-->
+            <form action="" id="survey-form">
+                <!--User Story #4: Inside the form element, I am required to enter my name in a field with ```id="name"```.-->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" placeholder="eg. Paul"><br>
+                
+                <!--User Story #5: Inside the form element, I am required to enter an email in a field with ```id="email"```.-->
+                <!--User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="eg. example@something.com"><br>
+                
+                <!--User Story #7: Inside the form, I can enter a number in a field with ```id="number"```.-->
+                <!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
+                <!--User Story #9: If I enter numbers outside the range of the number input, which are defined by the ```min``` and ```max``` attributes, I will see an HTML5 validation error.-->
+                <label for="number">Phone Number</label><br>
+                <input type="number" id="number" placeholder="eg. 9876541230"><br>
+                
+                <!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.-->
+                <p>In which race do you belong to?</p>
+                <input type="radio" id="white" name="race" value="white">
+                <label for="white">White</label><br>
+                <input type="radio" id="African-American" name="race" value="AA">
+                <label for="African-American">African-American</label><br>
+                <input type="radio" id="latino" name="race" value="latino">
+                <label for="latino">Latinos</label><br>
+                <input type="radio" id="asian" name="race" value="asian">
+                <label for="asian">Asian</label><br>
+                <input type="radio" id="other" name="race" value="other">
+                <label for="other">Other</label><br><br>
+
+                <!--User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding ```id="dropdown"```.-->
+                <label for="dropdown">How often do you go for shopping?</label>
+                <select name="" id="dropdown">
+                    <option value="0">Select Here</option>
+                    <option value="1">Once a week</option>
+                    <option value="2">Twice a week</option>
+                    <option value="3">Once a month</option>
+                    <option value="4">Twice a month</option>
+                </select><br>
+
+                <!--* User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.-->
+               <div id="shopping">
+                <label>Mostly for which of the following do you go for shopping?</label><br><small>(Click on the checkbox to select!)</small><br>
+                <input type="checkbox" id="shopping1" name="shopping1" value="grocerry">
+                <label for="shopping1">Grocerry</label><br>
+                <input type="checkbox" id="shopping2" name="shopping2" value="clothing">
+                <label for="vehicle2"> Clothing & shoes</label><br>
+                <input type="checkbox" id="shopping3" name="shopping3" value="food">
+                <label for="shopping3">Food & drinks</label><br>
+                <input type="checkbox" id="shopping4" name="shopping4" value="cosmetics">
+                <label for="shopping4">Cosmetics & body care</label><br>
+                <input type="checkbox" id="shopping5" name="shopping5" value="electronics">
+                <label for="shopping5">Electronics</label><br>
+                <input type="checkbox" id="shopping6" name="shopping6" value="household">
+                <label for="shopping6">Household appliances</label><br>
+                <input type="checkbox" id="shopping7" name="shopping7" value="toys">
+                <label for="shopping7">Toys & baby Products</label><br>
+                <input type="checkbox" id="shopping8" name="shopping8" value="stationary">
+                <label for="shopping8">Books, music, movies & games</label><br>
+                <input type="checkbox" id="shopping9" name="shopping9" value="sports">
+                <label for="shopping9">Sports & outdoor</label><br>
+                <input type="checkbox" id="shopping10" name="shopping10" value="pets">
+                <label for="shopping3">Garden & pets</label><br>
+            </div>
+                <!--User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.-->
+                <label for="comments">Please add your comments:</label>
+                <textarea id="comments" rows="3" cols="70" placeholder="Type comment here!"></textarea><br>
+                
+                <!--User Story #16: Inside the form element, I am presented with a button with ```id="submit"``` to submit all my inputs.-->
+                <button type="submit" id="submit">SUBMIT</button>
+            </form>
+    </div>
+</body>
+</html>
