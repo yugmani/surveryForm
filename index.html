@@ -18,20 +18,20 @@
             <!--User Story #3: I can see a form with ```id="survey-form"```.-->
             <form action="" id="survey-form">
                 <!--User Story #4: Inside the form element, I am required to enter my name in a field with ```id="name"```.-->
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" placeholder="eg. Paul"><br>
+                <label for="name" id="name-label">Name:</label><br>
+                <input type="text" id="name" placeholder="eg. Paul" required><br>
                 
                 <!--User Story #5: Inside the form element, I am required to enter an email in a field with ```id="email"```.-->
                 <!--User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" placeholder="eg. example@something.com"><br>
+                <label for="email" id="email-label">Email:</label><br>
+                <input type="email" id="email" placeholder="eg. example@something.com" required><br>
                 
                 <!--User Story #7: Inside the form, I can enter a number in a field with ```id="number"```.-->
                 <!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
                 <!--User Story #9: If I enter numbers outside the range of the number input, which are defined by the ```min``` and ```max``` attributes, I will see an HTML5 validation error.-->
-                <label for="number">Phone Number</label><br>
-                <input type="number" id="number" placeholder="eg. 9876541230"><br>
-                
+                <label for="number" id="number-label">Phone Number</label><br>
+                <input type="number" id="number" placeholder="eg. 9876541230" min="100" max="9999999999" required><br>
+
                 <!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.-->
                 <p>In which race do you belong to?</p>
                 <input type="radio" id="white" name="race" value="white">
@@ -80,8 +80,8 @@
                 <label for="shopping3">Garden & pets</label><br>
             </div>
                 <!--User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.-->
-                <label for="comments">Please add your comments:</label>
-                <textarea id="comments" rows="3" cols="70" placeholder="Type comment here!"></textarea><br>
+                <label for="comments" id="comments-label">Please add your comments:</label>
+                <textarea id="comments" rows="3" cols="67" placeholder="Type comment here!"></textarea><br>
                 
                 <!--User Story #16: Inside the form element, I am presented with a button with ```id="submit"``` to submit all my inputs.-->
                 <button type="submit" id="submit">SUBMIT</button>

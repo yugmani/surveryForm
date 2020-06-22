@@ -66,8 +66,6 @@ select option {
     padding:10px;
 }
 
-
-
 #submit {
     width:200px;
     border-radius:15px;
@@ -76,3 +74,16 @@ select option {
     color:#9400D3
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightgray;
+    }
+
+    #survey-form {
+        width:90%;
+    }
+
+    #comments {
+        width:90%;
+    }
+  }
